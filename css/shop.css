@@ -1,0 +1,94 @@
+.shop {
+	position: relative;
+	padding: 50px;
+
+}
+
+
+.shop li {
+	width: 30%;
+	margin: 1.66%;
+	height: auto;
+	background: #EDEDED;
+	padding: 25px;
+	position: relative;
+
+}
+
+
+.shop li .over {
+	transition: .4s;
+	opacity: 0;
+}
+
+.shop li:hover .over {
+	top: 0;
+	opacity: 1;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(25, 54, 170, 0.6);
+	position: absolute;
+	z-index: 10;
+	transition: .4s;
+}
+
+.shop .over span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color:#231F20;
+	font-weight:600;
+	text-transform: uppercase;
+	border: 2px solid #231F20;
+	width: 90px;
+	height: 90px;
+	text-align: center;
+	line-height: 90px;
+	font-size: 14px;
+	border-radius: 50%;
+}
+
+.thumnail {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	background: url(../images/tumnail0.png) no-repeat center/90%;
+}
+
+.thumnail::before {
+	content: "";
+	padding-top: 80%;
+	left: 0;
+	bottom: 0;
+	top: 0;
+	right: 0;
+	display: block;
+	
+}
+
+.pname {
+	display: block;
+	font-size: 15px;
+	font-weight: 600;
+	padding-top: 10px;
+}
+
+.pprice {
+	display: block;
+	font-size: 14px;
+}
+
+.pcte {
+	position: absolute;
+	right: -2px;
+	top: 10px;
+	padding: 5px 15px;
+	background: #231F20;
+	color: #fff;
+	font-size: 12px;
+	text-transform: uppercase
+}

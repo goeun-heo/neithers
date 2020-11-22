@@ -1,0 +1,161 @@
+@media only screen and (max-width: 1324px) {
+	.product .left {
+		padding: 50px;
+		width: 50%;
+		float: left;
+		position: static;
+		top: 0;
+
+	}
+
+	.product .right {
+		width: 50%;
+		margin-left: 50%;
+
+	}
+
+}
+
+
+@media only screen and (max-width: 1104px) {
+
+
+	.about p {
+		bottom: 0;
+		top: 50%;
+	}
+
+	.shop {
+		height: auto;
+		position: relative;
+		padding-bottom: 30px;
+	}
+
+
+	aside {
+		position: fixed;
+		height: 80px;
+		width: 100%;
+		border: 0px;
+		padding: 30px;
+		top: 0;
+		border-bottom: 1px solid rgba(35, 31, 32, 0.3);
+		background: #fff;
+	}
+
+
+	.copy {
+		display: none;
+	}
+
+	.sidetop {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		width: 100%;
+
+	}
+
+	.logo a img {
+		width: auto;
+		height: 50px;
+	}
+
+	.bag {
+		position: absolute;
+		right: 140px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.toggle {
+		width: 25px;
+		height: 20px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		right: 30px;
+	}
+
+	nav {
+		left: -300px;
+		position: fixed;
+		padding-top: 125px;
+	}
+
+	nav.on {
+		left: 0px;
+		position: fixed;
+		padding-top: 105px;
+	}
+
+	article {
+		width: 100%;
+		margin-left: 0px;
+		padding-top: 80px;
+
+	}
+}
+
+
+@media only screen and (max-width: 750px) {
+	
+	.product .left {
+		width: 100%;
+		float: left;
+		position: static;
+		padding: 30px;
+		top: 0;
+
+	}
+
+	.product .right {
+		width: 100%;
+		margin-left: 0%;
+		height: auto;
+
+	}
+
+	.shop li {
+		width: 48%;
+		margin: 1%;
+		height: auto;
+		background: #EDEDED;
+		padding: 25px;
+		position: relative;
+
+	}
+
+	.collection li > span {
+		font-size: 15px;
+
+	}
+
+	.collection li {
+
+		width: 100%;
+
+	}
+
+}
+
+@media only screen and (max-width: 425px) {
+	
+		nav .search {
+    margin-top: 15px;
+    
+}
+	.member {
+		padding-bottom: 30px;
+	}
+
+	.shop li {
+		width: 100%;
+		margin-bottom: 1%;
+		height: auto;
+		background: #EDEDED;
+		padding: 25px;
+		position: relative;
+
+	}
+}

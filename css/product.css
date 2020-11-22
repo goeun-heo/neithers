@@ -1,0 +1,317 @@
+.product {
+	height: auto;
+}
+
+
+.product .left {
+	padding: 50px;
+	width: 40%;
+	float: left;
+	position: sticky;
+	top: 0;
+
+}
+
+.product .left h4 {
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.product .left h5 {
+	font-size: 15px;
+	font-weight: 500;
+}
+
+.product .right {
+	width: 60%;
+	margin-left: 40%;
+
+}
+
+.product .right img {
+	width: 100%;
+}
+
+.buyoption div {
+	float: left;
+	height: 40px;
+	line-height: 40px;
+	font-size: 13px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 20px;
+}
+
+.buyoption .size {
+	width: calc(100% - 180px);
+	border: 1px solid #231F20;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	position: relative;
+}
+
+.buyoption .size span {
+	font-size: 9px;
+	position: absolute;
+	right: 20px;
+}
+
+.buyoption .cart {
+	text-align: center;
+	width: 90px;
+	height: 40px;
+	position: relative;
+
+}
+
+.buyoption .cart img {
+	width: 15px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.buyoption .cart span{padding-left: 20px;}
+.buyoption .buy {
+	width: 90px;
+	text-align: center;
+	border: 1px solid #231F20;
+	border-radius: 25px;
+	transition: .4s;
+}
+
+.buyoption .buy:hover {
+	color: #fff;
+	background: #231F20;
+	border-radius: 25px
+}
+
+.buyoption .buy:hover a {
+	color: #fff
+}
+
+.detail {
+	padding-top: 25px;
+}
+
+.detail img {
+	width: 50%;
+	padding: 5px;
+	float: left;
+	transition: .4s;
+}
+
+.detail img:hover {
+	opacity: .7;
+}
+
+.sizeinfo ul li {
+	clear: both;
+	font-size: 14px;
+	padding-top: 10px;
+}
+
+.sizeinfo {
+	padding-top: 25px;
+}
+
+.sizeinfo h4 {
+	font-size: 20px;
+	text-transform: uppercase;
+	border-bottom: 2px solid #231F20;
+	padding-bottom: 10px;
+	position: relative;
+}
+
+.sizeinfo h4 span {
+	position: absolute;
+	right: 10px;
+	font-size: 30px;
+	top: 50%;
+	transform: translateY(-70%);
+	font-weight: 500;
+
+}
+
+.sizeinfo table {
+	padding-top: 25px;
+	width: 100%;
+}
+
+.sizeinfo td {
+	width: 16.6%;
+	font-size: 14px;
+	text-align: center;
+}
+
+.sizeinfo th {
+	width: 16.6%;
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.38);
+	z-index: 50;
+}
+
+.overlay img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 80vmin;
+    width: 80vmin;
+}
+
+
+
+
+.nextbtn,
+.prevbtn,
+.closebtn {
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	text-align: center;
+	z-index: 30;
+	float: left;
+	height: 80%;
+}
+
+.nextbtn {
+	top: 50%;
+	right: 0;
+	width: 30%;
+
+}
+
+.nextbtn span {
+
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%) rotate(135deg)
+}
+
+.nextbtn span::before {
+	content: "";
+	width: 100px;
+	height: 2px;
+	display: block;
+	background: rgba(255, 255, 255, 0);
+	transition: .4s;
+
+}
+
+.nextbtn span::after {
+	content: "";
+	width: 2px;
+	height: 100px;
+	display: block;
+	background: rgba(255, 255, 255, 0);
+	transition: .4s;
+}
+
+.nextbtn:hover span::before,
+.nextbtn:hover span::after {
+	background: rgba(255, 255, 255, 0.65);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.47)
+}
+
+
+.prevbtn {
+	left: 0;
+	width: 30%;
+}
+
+.prevbtn span {
+
+	width: 100px;
+	height: 100px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translateY(-50%) rotate(-45deg)
+}
+
+.prevbtn span::before {
+	content: "";
+	width: 100px;
+	height: 2px;
+	display: block;
+	background: rgba(255, 255, 255, 0);
+	transition: .4s;
+}
+
+.prevbtn span::after {
+	content: "";
+	width: 2px;
+	height: 100px;
+	display: block;
+	background: rgba(255, 255, 255, 0);
+	transition: .4s;
+}
+
+.prevbtn:hover span::before,
+.prevbtn:hover span::after {
+	background: rgba(255, 255, 255, 0.65);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.47)
+}
+
+.closebtn {
+	right: 30%;
+	width: 40%;
+}
+
+.closebtn span {
+
+	width: 150px;
+	height: 150px;
+	display: block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.closebtn span::before {
+	content: "";
+	width: 150px;
+	height: 2px;
+	display: block;
+	background: rgba(255, 255, 255, 0);
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	transition: .4s;
+
+}
+
+.closebtn span::after {
+	content: "";
+	width: 2px;
+	height: 150px;
+	display: block;
+	background: rgba(255, 255, 255, 0);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: .4s;
+
+}
+
+.closebtn:hover span::before,
+.closebtn:hover span::after {
+	background: rgba(255, 255, 255, 0.8);
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.47)
+}
