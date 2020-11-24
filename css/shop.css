@@ -4,24 +4,68 @@
 
 }
 
+.shopTop {
+	position: relative;
+	padding: 0px 2%;
+	padding-bottom: 20px;
+}
 
-.shop li {
+
+.pdttit {
+
+	text-transform: uppercase;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+.pdtnum {
+	font-weight: 600;
+	color: rgba(62, 56, 55, 0.53)
+}
+
+.pdtcte {
+	display: inline-block;
+	position: absolute;
+	right: 1%;
+	bottom: 25px;
+	text-transform: capitalize;
+}
+
+.pdtcte li {
+	font-size: 12px;
+	padding: 0 10px;
+	border-right: 1px solid #cccccc;
+	line-height: 1;
+	opacity: .8;
+	transition: .2s;
+	font-weight: 600;
+}
+
+.pdtcte li:hover {
+	opacity: 1;
+}
+
+.pdtcte li:last-child {
+	border-right: 0px;
+}
+
+.pdtlist li {
 	width: 30%;
 	margin: 1.66%;
 	height: auto;
 	background: #EDEDED;
-	padding: 25px;
+	padding: 30px;
 	position: relative;
 
 }
 
 
-.shop li .over {
+.pdtlist li .over {
 	transition: .4s;
 	opacity: 0;
 }
 
-.shop li:hover .over {
+.pdtlist li:hover .over {
 	top: 0;
 	opacity: 1;
 	left: 0;
@@ -40,8 +84,8 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	color:#231F20;
-	font-weight:600;
+	color: #231F20;
+	font-weight: 600;
 	text-transform: uppercase;
 	border: 2px solid #231F20;
 	width: 90px;
@@ -67,7 +111,7 @@
 	top: 0;
 	right: 0;
 	display: block;
-	
+
 }
 
 .pname {
@@ -91,4 +135,32 @@
 	color: #fff;
 	font-size: 12px;
 	text-transform: uppercase
+}
+
+.moreview {
+	text-align: center;
+	padding-top: 30px;
+}
+
+.moreview span {
+	display: block;
+	padding-top: 5px;
+	text-transform: uppercase;
+	font-size: 11px;
+	font-weight: 600;
+
+}
+
+.moreview b {
+	background: #231F20;
+	color: #fff;
+	width: 40px;
+	height: 40px;
+	display: inline-block;
+	line-height: 40px;
+	text-align: center;
+	border-radius: 50%;
+	font-size: 18px;
+	transition: .4s;
+	cursor: pointer;
 }

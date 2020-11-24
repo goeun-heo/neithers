@@ -95,11 +95,13 @@
 		padding-top: 80px;
 
 	}
+
+
 }
 
 
 @media only screen and (max-width: 750px) {
-	
+
 	.product .left {
 		width: 100%;
 		float: left;
@@ -116,7 +118,7 @@
 
 	}
 
-	.shop li {
+	.pdtlist li {
 		width: 48%;
 		margin: 1%;
 		height: auto;
@@ -137,25 +139,77 @@
 
 	}
 
+	footer {
+		background: #231F20;
+		padding: 30px;
+
+	}
 }
 
 @media only screen and (max-width: 425px) {
-	
-		nav .search {
-    margin-top: 15px;
-    
-}
+
+	.pdtcte li {
+		font-size: 11px;
+	}
+
+	.pcte {
+		position: absolute;
+		right: -2px;
+		top: 10px;
+		padding: 3px 10px;
+		background: #231F20;
+		color: #fff;
+		font-size: 10px;
+		text-transform: uppercase;
+	}
+
+	.shop {
+		position: relative;
+		padding: 30px;
+	}
+
+	nav .search {
+		margin-top: 15px;
+
+	}
+
 	.member {
 		padding-bottom: 30px;
 	}
 
-	.shop li {
-		width: 100%;
-		margin-bottom: 1%;
+	.pdtlist li {
+		width: 48%;
+		margin: 1%;
 		height: auto;
 		background: #EDEDED;
-		padding: 25px;
+		padding: 15px;
 		position: relative;
+
+	}
+
+	.pname {
+		display: block;
+		font-size: 12px;
+		font-weight: 600;
+		padding-top: 10px;
+	}
+
+	.pprice {
+		display: block;
+		font-size: 11px;
+	}
+
+	footer p {
+		color: rgba(255, 255, 255, 0.49);
+		font-size: 12px;
+		width: 100%;
+		display: block;
+
+	}
+
+	footer p:first-child {
+		margin-right: 0%;
+		padding-bottom: 13px;
 
 	}
 }

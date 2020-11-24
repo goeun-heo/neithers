@@ -69,12 +69,18 @@
                 	$(".mainmenu > li").eq(index).click(function () {
                 		$("article").children("div").hide();
                 		$("."+el.name).fadeIn(300);
+						$(".toggle").removeClass("on");
+   						$("nav").removeClass("on");
+						$("body, html").animate({scrollTop: 0}, 0);
                 	})/////////
                 });///////////////////////foreach문
 	   
-	   		$(".shopmenu li").click(function(){
+	   		$(".shopmenu li, .backbtn").click(function(){
 						$("article").children("div").hide();
                 		$(".shop").fadeIn(300);
+						$(".toggle").removeClass("on");
+   						$("nav").removeClass("on");
+						$("body, html").animate({scrollTop: 0}, 0);
 			})/////////////////////
 
    	///////////////////////////////////////////////////////////////
@@ -93,22 +99,30 @@
                     ]; //////////////publishing 배열
 
                     shop.forEach(function (el, index) {
-                    	$(".shop ul").append("<li class='" + el.class + "'><a href='#'><span class='over'><span>view</span></span><span class='thumnail'></span><span class='pname'>" + el.pname + "</span><span class='pprice'>￦ 158,000</span><span class='pcte'>" + el.class + "</span></a></li>")
+                    	$(".pdtlist").append("<li class='" + el.class + "'><a href='#'><span class='over'><span>view</span></span><span class='thumnail'></span><span class='pname'>" + el.pname + "</span><span class='pprice'>￦ 158,000</span><span class='pcte'>" + el.class + "</span></a></li>")
 
                     	$(".thumnail").eq(index).css({
                     		'background-image': el.img
                     	}); /////////css
 						$(".mainmenu > li").eq(3).click(function(){
-							$(".shop ul").children("li").show();
-						})
+							$(".pdtlist").children("li").show();
+							$(".pdttit").text("all");
+							$(".pdtnum").text($(".pdtlist").children("li").length);
+						});//////////////////////
                     	$(".shopmenu li").eq(index).click(function () {
-                    		$(".shop ul").children("li").hide();
-                    		$(".shop ul").children("."+el.pcte).show();
+                    		$(".pdtlist").children("li").hide();
+                    		$(".pdtlist").children("."+el.pcte).show();
+							$(".pdttit").text(el.pcte);
+							$(".pdtnum").text($("."+el.pcte).length);
+							
                     	}) /////////////////////
                     })//////////////////foreach문
 	   
+	   
+	   				
+	   
 	   				/////////// 상품 정보 /////////////////
-	   				$(".shop ul").children("li").click(function () {
+	   				$(".pdtlist").children("li").click(function () {
 	   					$("article").children("div").hide();
 	   					$(".product").fadeIn(300);
 	   				})////////////click
